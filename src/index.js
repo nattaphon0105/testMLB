@@ -1,13 +1,35 @@
-import React from 'react';
+import React,{Component}from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './css/custom.css';
 import App from './App';
+import GenCate from './componants/Cate';
+import Search from './componants/Search';
+import Person from './componants/Person';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+import $ from 'jquery';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// function Search() {
+//   return (
+//     <div className="container">
+//       <div className="search-box">
+//           <input className='search'></input>
+//           <div className='btn-clear'>Clear</div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
 root.render(
   <React.StrictMode>
     <App />
+    <GenCate />
+    <Search />
+    <Person />
   </React.StrictMode>
 );
 
